@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
     @Override
     public void handleResult(Result result) {
         Log.v("QRCode", result.getText());
-        Toast.makeText(this, result.getText(), Toast.LENGTH_LONG);
+        Toast.makeText(this, result.getText(), Toast.LENGTH_LONG).show();
         mScannerView.resumeCameraPreview(this);
     }
 }
